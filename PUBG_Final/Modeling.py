@@ -21,12 +21,12 @@ def fit_model(df) :
         d["pred"] = pred
         d = d.sort_values("winPlacePerc").reset_index(drop=True)
         
-        fig = plt.figure(figsize = (15,8))
+        fig = plt.figure(figsize = (10,5))
         ax1 = fig.add_subplot(111)
         
         sns.lineplot(x=d.index, y = d.winPlacePerc, data =d, label = "Original", ax=ax1, color='orange')
         sns.scatterplot(x=d.index, y=d.pred, label = name, ax=ax1)
-        ax1.set_ylim([2,-2])
+        ax1.set_ylim([-2,2])
         plt.title(f"{name} Prediction", fontsize=12)
         plt.savefig(f"{name}_test_pred.png")
     
