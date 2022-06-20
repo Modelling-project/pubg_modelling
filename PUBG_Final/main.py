@@ -5,8 +5,8 @@ import pandas as pd
 
 def main() :
     print("Data loading...")
-    train = pd.read_csv("/Users/krc/Documents/dev/pubg_modelling/PUBG_Final/data/train_V2.csv")
-    test = pd.read_csv("/Users/krc/Documents/dev/pubg_modelling/PUBG_Final/data/test_V2.csv")
+    train = pd.read_csv("/PUBG_Final/data/train_V2.csv")
+    test = pd.read_csv("PUBG_Final/data/test_V2.csv")
     print("Data loaded!\n")
     
     Preprocessing.checkNaN(train)
