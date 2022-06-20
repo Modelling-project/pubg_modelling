@@ -3,6 +3,8 @@
 
 # ignore data folder 
 /data/
+/PUBG_Final/data/
+
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
